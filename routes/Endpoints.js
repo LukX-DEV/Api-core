@@ -18,18 +18,27 @@ router.get("/", async (req, res) => {
 router.get('/flags', (req, res) => {
     let flags = require('../data/flags')
     let popularArray = []
+    let notPopularArray = []
     flags.forEach(flag => {
         if(flag.popular) {
             popularArray.push(flag)
+        } else {
+            notPopularArray.push(flag)
         }
     })
-    let popularOnly = req.query.popularOnly
+    let diff = req.query.difficulty
 
-    if(popularOnly == "true") {
+    if(diff == "onlyPopular") {
         res.status(200)
         res.send({
             code: 200,
             message: random(popularArray),
+        })
+    } else if (diff == "onlyHard") {
+        res.status(200)
+        res.send({
+            code: 200,
+            message: random(notPopularArray),
         })
     } else {
         res.status(200)
@@ -39,6 +48,29 @@ router.get('/flags', (req, res) => {
         })
     }
 
+})
+
+router.get('/8ball', (req, res) => {
+    let answers = require('../data/8ball')
+    res.status(200).send({
+        code: 200,
+        message: random(answers)
+    })
+})
+
+router.get('/endpoints', (req, res) => {
+    let apiRoutes = 0;
+
+    router.stack.forEach(route => {
+        apiRoutes += 1;
+    })
+
+    res.status(200).send({
+        code: 200,
+        message: {
+            endpoints: apiRoutes
+        }
+    })
 })
 
 logger.log("Endpoints.js loaded.")
