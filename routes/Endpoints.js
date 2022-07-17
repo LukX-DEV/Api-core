@@ -9,11 +9,28 @@ function random(array) {
 
 router.get('/flags', (req, res) => {
     let flags = require('../data/flags')
-    res.status(200)
-    res.send({
-        code: 200,
-        message: random(flags),
+    let popularArray = []
+    flags.forEach(flag => {
+        if(flag.popular) {
+            popularArray.push(flag)
+        }
     })
+    let popularOnly = req.query.popularOnly
+
+    if(popularOnly == "true") {
+        res.status(200)
+        res.send({
+            code: 200,
+            message: random(popularArray),
+        })
+    } else {
+        res.status(200)
+        res.send({
+            code: 200,
+            message: random(flags),
+        })
+    }
+
 })
 
 logger.log("Endpoints.js loaded.")

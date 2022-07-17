@@ -13,7 +13,8 @@ module.exports = [
     },
     {
         flag: "🇦🇫",
-        name: ["afghanistan", "afganistan"]
+        name: ["afghanistan", "afganistan"],
+        popular: true
     },
     {
         flag: "🇦🇬",
@@ -25,7 +26,8 @@ module.exports = [
     },
     {
         flag: "🇦🇱",
-        name: ["albania"]
+        name: ["albania"],
+        popular: true
     },
     {
         flag: "🇦🇲",
@@ -37,11 +39,13 @@ module.exports = [
     },
     {
         flag: "🇦🇶",
-        name: ["antarctica"]
+        name: ["antarctica"],
+        popular: true
     },
     {
         flag: "🇦🇷",
-        name: ["argentina"]
+        name: ["argentina"],
+        popular: true
     },
     {
         flag: "🇦🇸",
@@ -49,11 +53,13 @@ module.exports = [
     },
     {
         flag: "🇦🇹",
-        name: ["austria"]
+        name: ["austria"],
+        popular: true
     },
     {
         flag: "🇦🇺",
-        name: ["australia"]
+        name: ["australia"],
+        popular: true
     },
     {
         flag: "🇦🇼",
@@ -74,5 +80,14 @@ module.exports = [
     {
         flag: "🇧🇩",
         name: ["bangladesh"]
+    },
+    {
+        flag: "🇧🇪",
+        name: ["belgium"],
+        popular: true
+    },
+    {
+        flag: "🇧🇫",
+        name: ["burkina faso"]
     }
 ]
