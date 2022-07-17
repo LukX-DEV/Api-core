@@ -33,6 +33,14 @@ router.get('/flags', (req, res) => {
 
 })
 
+router.get('/8ball', (req, res) => {
+    let answers = require('../data/8ball')
+    res.status(200).send({
+        code: 200,
+        message: random(answers)
+    })
+})
+
 logger.log("Endpoints.js loaded.")
 
 module.exports = router
