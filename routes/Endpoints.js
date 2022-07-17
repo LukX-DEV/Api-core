@@ -10,18 +10,27 @@ function random(array) {
 router.get('/flags', (req, res) => {
     let flags = require('../data/flags')
     let popularArray = []
+    let notPopularArray = []
     flags.forEach(flag => {
         if(flag.popular) {
             popularArray.push(flag)
+        } else {
+            notPopularArray.push(flag)
         }
     })
-    let popularOnly = req.query.popularOnly
+    let diff = req.query.difficulty
 
-    if(popularOnly == "true") {
+    if(diff == "onlyPopular") {
         res.status(200)
         res.send({
             code: 200,
             message: random(popularArray),
+        })
+    } else if (diff == "onlyHard") {
+        res.status(200)
+        res.send({
+            code: 200,
+            message: random(notPopularArray),
         })
     } else {
         res.status(200)

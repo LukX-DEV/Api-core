@@ -102,5 +102,109 @@ module.exports = [
     {
         flag: "🇧🇮",
         name: ["burundi"]
-    }
+    },
+    {
+        flag: "🇧🇯",
+        name: ["benin"]
+    },
+    {
+        flag: "🇧🇲",
+        name: ["bermuda"]
+    },
+    {
+        flag: "🇧🇳",
+        name: ["brunei"]
+    },
+    {
+        flag: "🇧🇴",
+        name: ["bolivia"]
+    },
+    {
+        flag: "🇧🇶",
+        name: ["caribbean netherlands"]
+    },
+    {
+        flag: "🇧🇷",
+        name: ["brazil"],
+        popular: true
+    },
+    {
+        flag: "🇧🇸",
+        name: ["bahamas"]
+    },
+    {
+        flag: "🇧🇹",
+        name: ["bhutan"]
+    },
+    {
+        flag: "🇧🇻",
+        name: ["bouvet island", "bouvet"]
+    },
+    {
+        flag: "🇧🇼",
+        name: ["botswana"]
+    },
+    {
+        flag: "🇧🇾",
+        name: ["belarus"],
+        popular: true
+    },
+    {
+        flag: "🇧🇿",
+        name: ["belize"]
+    },
+    {
+        flag: "🇨🇦",
+        name: ["canada"],
+        popular: true
+    },
+    {
+        flag: "🇨🇫",
+        name: ["central african republic"]
+    },
+    {
+        flag: "🇨🇭",
+        name: ["switzerland"],
+        popular: true
+    },
+    {
+        flag: "🇨🇰",
+        name: ["cook islands", "cook"]
+    },
+    {
+        flag: "🇨🇱",
+        name: ["chile"],
+        popular: true
+    },
+    {
+        flag: "🇨🇲",
+        name: ["cameroon"]
+    },
+    {
+        flag: "🇨🇳",
+        name: ["china"],
+        popular: true
+    },
+    {
+        flag: "🇨🇴",
+        name: ["colombia"],
+        popular: true
+    },
+    {
+        flag: "🇨🇵",
+        name: ["clipperton island"]
+    },
+    {
+        flag: "🇨🇷",
+        name: ["costa rica"]
+    },
+    {
+        flag: "🇨🇺",
+        name: ["Cuba"],
+        popular: true
+    },
+    {
+        flag: "🇨🇻",
+        name: ["cape verde"]
+    },
 ]
