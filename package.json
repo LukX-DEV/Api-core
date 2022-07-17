@@ -1,19 +1,26 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "mongoose": "^6.3.6",
-    "multer": "^1.4.5-lts.1",
-    "node-fetch": "^3.2.5"
-  },
-  "name": "Pixel-Labs-Api",
+  "name": "pixel-labs-api",
   "version": "1.0.0",
-  "main": "./src/main.js",
+  "description": "Pixel Labs Api is powerful api to create amazing things.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaafinski/Pixel-Labs-Api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/kaafinski/Pixel-Labs-Api/issues"
+  },
+  "homepage": "https://github.com/kaafinski/Pixel-Labs-Api#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "moment": "^2.29.4"
+  }
 }
