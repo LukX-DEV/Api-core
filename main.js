@@ -6,7 +6,7 @@ const logger = require('./functions/Logger')
 
 app.set('views', path.join(__dirname) + '/views')
 app.set('view engine', 'hbs')
-
+app.use(express.static(path.join(__dirname, "./views"))) 
 app.use('/', require('./routes/Website'))
 app.use('/api', require('./routes/Endpoints'))
 

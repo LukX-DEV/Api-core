@@ -1,3 +1,4 @@
 {
-    "port": 4500
+    "port": 4500,
+    "endpoints": 2
 }
