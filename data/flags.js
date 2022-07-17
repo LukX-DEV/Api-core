@@ -89,5 +89,18 @@ module.exports = [
     {
         flag: "🇧🇫",
         name: ["burkina faso"]
+    },
+    {
+        flag: "🇧🇬",
+        name: ["bulgaria"],
+        popular: true
+    },
+    {
+        flag: "🇧🇭",
+        name: ["bahrain"]
+    },
+    {
+        flag: "🇧🇮",
+        name: ["burundi"]
     }
 ]
