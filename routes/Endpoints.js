@@ -50,6 +50,21 @@ router.get('/8ball', (req, res) => {
     })
 })
 
+router.get('/endpoints', (req, res) => {
+    let apiRoutes = 0;
+
+    router.stack.forEach(route => {
+        apiRoutes += 1;
+    })
+
+    res.status(200).send({
+        code: 200,
+        message: {
+            endpoints: apiRoutes
+        }
+    })
+})
+
 logger.log("Endpoints.js loaded.")
 
 module.exports = router
