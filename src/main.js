@@ -20,8 +20,8 @@ const config = require("./config.js")
 
 
   /* Start */
-  app.listen(config.PORT, () => {
-    console.log("API is listening on port " + config.PORT);
+  app.listen(config.port, () => {
+    console.log("API is listening on port " + config.port);
   });
 
   
